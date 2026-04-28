@@ -1,0 +1,37 @@
+databaseChangeLog:
+  - changeSet:
+      id: v1.0__create_table_limit_settings
+      author: Shtiroy Aleksandr
+      changes:
+        sqlFile:
+          path: db/changelog/01/v1.0__create_table_limit_settings.sql
+          endDelimiter: \nGO
+          splitStatements: true
+          dbms: postgresql
+  - changeSet:
+      id: v1.0__insert_data_limit_settings
+      author: Shtiroy Aleksandr
+      changes:
+        sqlFile:
+          path: db/changelog/01/v1.0__insert_data_limit_settings.sql
+          endDelimiter: \nGO
+          splitStatements: true
+          dbms: postgresql
+  - changeSet:
+      id: v1.0__create_table_user_limit_account
+      author: Shtiroy Aleksandr
+      changes:
+        sqlFile:
+          path: db/changelog/01/v1.0__create_table_user_limit_account.sql
+          endDelimiter: \nGO
+          splitStatements: true
+          dbms: postgresql
+  - changeSet:
+      id: v1.0__create_table_limit_operation
+      author: Shtiroy Aleksandr
+      changes:
+        sqlFile:
+          path: db/changelog/01/v1.0__create_table_limit_operation.sql
+          endDelimiter: \nGO
+          splitStatements: true
+          dbms: postgresql
